@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 30%;
+}
+
+.item {
+  color: red;
+  font-weight: bold;
+  font-size: 36px;
+}

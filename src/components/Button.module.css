@@ -1,0 +1,12 @@
+.btn {
+  background-color: blueviolet;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: transparent;
+  border-radius: 10px;
+}
+
+.btn:first-child {
+  margin-right: 20px;
+}
