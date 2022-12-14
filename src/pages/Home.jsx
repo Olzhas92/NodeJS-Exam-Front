@@ -7,6 +7,8 @@ const Home = () => {
   const [error, setError] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [arr, setArr] = useState([]);
+  const [isLogin, setIsLogin] = useState(false);
+  const [email, setEmail] = useState();
 
   const getData = async () => {
     try {
@@ -33,8 +35,8 @@ const Home = () => {
       <nav className={styles.navbar}>
         <NavPages />
         <div styles={styles.buttons}>
-          {/* <Button>Sign Up</Button> */}
-          <Button>Sign In</Button>
+          {isLogin && <h2>{email}</h2>}
+          {!isLogin && <Button>Sign In</Button>}
         </div>
       </nav>
       {!isLoading && arr.map((item) => <p key={item.id}>{item.name}</p>)}
